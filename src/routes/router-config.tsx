@@ -1,5 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import { HomeScreen, SettingsScreen, TasksScreen } from "../screens";
+import {
+  AuthScreen,
+  HomeScreen,
+  SettingsScreen,
+  TasksScreen,
+} from "../screens";
 import { App } from "../App";
 
 export enum Routes {
@@ -7,6 +12,7 @@ export enum Routes {
   home = "/home",
   task = "/task",
   settings = "/settings",
+  login = "/login",
 }
 
 export const routerCongig = createBrowserRouter([
@@ -28,5 +34,9 @@ export const routerCongig = createBrowserRouter([
         element: <SettingsScreen />,
       },
     ],
+  },
+  {
+    path: Routes.login,
+    element: <AuthScreen />,
   },
 ]);
