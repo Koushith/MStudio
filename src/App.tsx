@@ -1,15 +1,10 @@
-import { useState } from "react";
+import { Outlet } from "react-router-dom";
 
-import { Button } from "@mantine/core";
-
-function App() {
-  const [count, setCount] = useState(0);
-
+export const App = () => {
   return (
     <>
-      <p>lorem</p>
+      {/* app layout oes here */}
+      <Outlet />
     </>
   );
-}
-
-export default App;
+};
