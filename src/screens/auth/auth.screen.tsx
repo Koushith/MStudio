@@ -38,10 +38,10 @@ export function AuthScreen(props: PaperProps) {
 
   return (
     <>
-      <Box m={"lg"} maw={1200} ml={"auto"} mr={"auto"}>
+      <Box m={"lg"} maw={1200} ml={"auto"} mr={"auto"} p={10}>
         <TopNavbar />
       </Box>
-      <Box maw={480} ml={"auto"} mr={"auto"} mt={200} mb={"auto"}>
+      <Box maw={480} ml={"auto"} mr={"auto"} mt={200} mb={"auto"} p={10}>
         <Paper radius="md" p="xl" withBorder {...props}>
           <Text size="lg" weight={500} mb={20}>
             Welcome to MStudio, {type} with
